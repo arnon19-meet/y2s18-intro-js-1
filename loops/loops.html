@@ -17,9 +17,26 @@ function getRandomInt(min, max) {
 var randomInt = getRandomInt(1, 100);
 /* END STARTING CODE */
 
-// your code goes under here
+var guessednumber= prompt("Guess the number im thinking of!     (Hint: it's from 1-100");
+parseInt(guessednumber);
+ while (guessednumber!=randomInt) {
+ 	if (guessednumber>randomInt) {
+ 		alert("Your guess was too high! try again")
+ 		var guessednumber= prompt("Guess the number im thinking of!     (Hint: it's from 1-100")
+ 	}
+ 	else if (guessednumber<randomInt) {
+ 		alert("your guess was too low! try again")
+ 		var guessednumber= prompt("Guess the number im thinking of!     (Hint: it's from 1-100")
+ 	}
+ }
+if (guessednumber==randomInt) {
+	alert("you got it!")
+}
 
-    </script>
+
+
+</script>
+
 </body>
 
 </html>

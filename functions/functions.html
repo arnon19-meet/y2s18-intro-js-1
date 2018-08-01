@@ -16,8 +16,23 @@ function isLetter(char) {
 }
 
 // Write your isPalindrome function here!
+function reverseString(word) {
+	var splitString=word.split("");
+	var reverseArray = splitString.reverse();
+	var joinArray=reverseArray.join("");
+	return joinArray
+}
+function isPalindrome(word) {
+	if (word===reverseString(word)){
+		alert("true")
+	}else{
+		alert("false")	}
+}
+var palindrome=prompt("give us a palindrome please")
+document.write(isPalindrome(palindrome))
 
     </script>
+
 </body>
 
 </html>
